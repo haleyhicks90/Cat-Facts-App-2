@@ -14,12 +14,15 @@ $(".submit").on("click", (event) => {
 
 $.ajax({
         url: "https://cat-fact.herokuapp.com/facts",
+        type: "GET",
         data: {
             "$limit" : limit,
+            
         }
     }).then(
         (data) => {
             console.log(data);
+
 
             const $ul = $("<ul>")
 
