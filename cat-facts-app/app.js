@@ -1,5 +1,6 @@
 $(() => {
 
+// start of fact container
 $(".submit").on("click", (event) => {
     event.preventDefault()
     $(".fact-container").empty()
@@ -17,7 +18,7 @@ $.ajax({
         type: "GET",
         data: {
             "$limit" : limit,
-            
+
         }
     }).then(
         (data) => {
@@ -39,5 +40,14 @@ $.ajax({
         console.log("bad request");
     }
 });
+// end of fact container
 
+
+// start of carousel container
+// let currentImgIndex = 0
+// let numOfImages = $(".carousel-images").children().length - 1
+
+
+
+// below: closing brackets for window.onload
 })
