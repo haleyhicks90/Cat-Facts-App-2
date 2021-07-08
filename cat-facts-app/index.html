@@ -4,48 +4,65 @@
         <meta charset="utf-8">
         <title>Cat Facts</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Staatliches&display=swap" rel="stylesheet">
         <script
           src="https://code.jquery.com/jquery-3.6.0.min.js"
           integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
           crossorigin="anonymous"></script>
         <script src="app.js" charset="utf-8"></script>
     </head>
-    <body>
-        <h1>Cat Facts</h1>
-        <h2>Can't go one more second without a new cat fact? We got you!</h2>
-        <h3>Tell us how many cat facts you need to get your paws on below</h3>
 
-<!-- below: input box and submit button -->
-        <form>
-            <input class="user-input" type="text" placeholder="# of facts you want to see" />
-            <input class="submit" type="submit" />
-        </form>
 
-<!-- below: container that facts will append to -->
-        <h2>Your Curated Cat Fact</h2>
-        <div class="fact-container"></div>
+    <div class="main-container">
+        <body>
+            <header class="header">
+                <img src="https://img.icons8.com/ios/50/000000/cat--v2.png"/>
+                <h1>Cat Facts</h1>
+                <img src="https://img.icons8.com/ios/50/000000/cat--v2.png"/>
+            </header>
 
-<!-- below: start of corousel -->
-        <h2>Need a quick cat-pic hit?</h2>
-        <h3>Look no further</h3>
 
-<!-- below, carousel container -->
-<!-- remember to add actual buttons to previous and next -->
-        <div class="carousel-container">
-            <div class="previous-button"></div>
-            <div class="carousel-images">
-                <img src="https://pbs.twimg.com/profile_images/1350009152056287237/Cg2U6f-t_400x400.jpg" alt="" />
-                <img src="https://pbs.twimg.com/profile_images/1816111368/0011346-cat-with-funny-face_400x400.jpg" alt="" />
-                <img src="https://image.shutterstock.com/image-photo/portrait-british-kitten-crazy-cat-260nw-772242484.jpg" alt="" />
-                <img src="https://i.ytimg.com/vi/WSsl4rE_qro/maxresdefault.jpg" alt="" />
-                <img src="https://i.pinimg.com/originals/82/82/c3/8282c33cbb89d4e2b9be18df7dba0c52.jpg" alt="" />
-                <img src="https://s.abcnews.com/images/Entertainment/cn_sourpuss_ll_130426_ssh.jpg" alt="" />
-                <img src="https://media.socastsrm.com/wordpress/wp-content/blogs.dir/1287/files/2018/11/Capture-2.jpg" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+            <h2 class="sub-heading" id="sh1">Can't go one more second without a new cat fact?</h2>
+            <h2 class="sub-heading" id="sb2">We got you!</h2>
+            <h3>Tell us how many cat facts you need to get your paws on below</h3>
 
+    <!-- below: input box and submit button -->
+            <form>
+                <input class="user-input" type="text" placeholder="# of facts you want to see" />
+                <input class="submit" type="submit" />
+            </form>
+
+    <!-- below: container that facts will append to -->
+            <h2>Your Curated Cat Fact</h2>
+            <div class="fact-container"></div>
+
+    <!-- below: start of corousel -->
+            <h2>Need a quick cat-pic hit?</h2>
+            <h3>Look no further</h3>
+
+    <!-- below, carousel container -->
+    <!-- remember to add actual buttons to previous and next -->
+            <div class="carousel-container">
+                <div class="button previous">
+                    <img src="https://img.icons8.com/small/32/000000/cat-butt.png"/>
+                </div>
+
+
+                <div class="carousel-images">
+                    <img src="https://pbs.twimg.com/profile_images/1350009152056287237/Cg2U6f-t_400x400.jpg" alt="beach-ready kitty" />
+                    <img src="https://pbs.twimg.com/profile_images/1816111368/0011346-cat-with-funny-face_400x400.jpg" alt="mean mugging kitty" />
+                    <img src="https://image.shutterstock.com/image-photo/portrait-british-kitten-crazy-cat-260nw-772242484.jpg" alt="kitty sticking tongue out" />
+                    <img src="https://i.ytimg.com/vi/WSsl4rE_qro/maxresdefault.jpg" alt="very refined kitty" />
+                    <img src="https://i.pinimg.com/originals/82/82/c3/8282c33cbb89d4e2b9be18df7dba0c52.jpg" alt="kitty thinking he's about to die" />
+                    <img src="https://s.abcnews.com/images/Entertainment/cn_sourpuss_ll_130426_ssh.jpg" alt="mountain man kitty" />
+                    <img src="https://media.socastsrm.com/wordpress/wp-content/blogs.dir/1287/files/2018/11/Capture-2.jpg" alt="ma, there's a weird cat outside" />
+                    <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/83/83001a92e602ec62120d3fc6e23ddaac5e582245_full.jpg" alt="speeder kitties" />
+                </div>
+
+                <div class="button next"></div>
             </div>
-            <div class="next-button"></div>
         </div>
     </body>
 </html>

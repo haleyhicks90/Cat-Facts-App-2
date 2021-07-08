@@ -1,11 +1,65 @@
-h1 {
-    color: red;
+body {
+    background-color: #E6E6B8;
 }
 
-h2 {
-    color: purple;
+.header  {
+    display: flex;
+    align-items: center;
+    background-color: #61614E;
+    border-radius: 10px;
+
 }
 
-h3 {
-    color: orange;
+.header h1 {
+    font-size: 50px;
+}
+
+.header h1, img {
+    margin: 10px;
+    color: #E6E6B8;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container h1, h2 {
+    font-family: 'Staatliches', cursive;
+}
+
+.main-container h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub-heading {
+    font-size: 40px;
+}
+
+/* #sb1 {
+    margin-top: 5px;
+}
+
+#sb2 {
+    margin-bottom: 10px;
+} */
+
+.carousel-container {
+    display: flex;
+    width: 30%;
+    /* justify-content: space-around; */
+}
+
+.carousel-images {
+    width: 80%;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+}
+
+.carousel-images img:first-of-type {
+    display: block;
 }
