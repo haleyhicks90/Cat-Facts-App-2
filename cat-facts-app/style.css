@@ -1,5 +1,17 @@
+/* Initially set everything to 0 margin and 0 padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #E6E6B8;
+    /* width: 100%; */
+}
+
+/* I want the main container, which holds everything, to be the full width of the page */
+.main-container {
+    width: 100%;
 }
 
 .header  {
@@ -7,18 +19,24 @@ body {
     align-items: center;
     background-color: #61614E;
     border-radius: 10px;
-
+    padding-top: 10px;
+    margin-top: 30px;
 }
 
 .header h1 {
+    font-family: 'Staatliches', cursive;
     font-size: 50px;
+    padding: 5px 15px;
 }
+
 
 .header h1, img {
     margin: 10px;
-    color: #E6E6B8;
 }
 
+
+
+/*
 .main-container {
     display: flex;
     flex-direction: column;
@@ -38,22 +56,22 @@ body {
 }
 
 #sh1 {
-    margin: 50px, 0px, 0px, 0px;
+    margin: 50px auto;
 }
 
 #sh2 {
-    margin-bottom: 50px;
-}
+    line-height: 1%;
+} */
 
 /* .form {
     font-family: 'Montserrat', sans-serif;
 } */
-
+/*
 .carousel-container {
     display: flex;
     width: 30%;
-    /* justify-content: space-around; */
-}
+    /* justify-content: space-around; */ */
+/* }
 
 .carousel-images {
     width: 80%;
@@ -66,4 +84,4 @@ body {
 
 .carousel-images img:first-of-type {
     display: block;
-}
+} */
