@@ -37,12 +37,16 @@ body {
     font-size: 40px;
 }
 
-/* #sb1 {
-    margin-top: 5px;
+#sh1 {
+    margin: 50px, 0px, 0px, 0px;
 }
 
-#sb2 {
-    margin-bottom: 10px;
+#sh2 {
+    margin-bottom: 50px;
+}
+
+/* .form {
+    font-family: 'Montserrat', sans-serif;
 } */
 
 .carousel-container {

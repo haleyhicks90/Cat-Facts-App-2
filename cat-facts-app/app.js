@@ -1,12 +1,17 @@
 $(() => {
 
 // start of fact container
+
+//below: an event listener that listens for a click on the submit button
 $(".submit").on("click", (event) => {
     event.preventDefault()
+//below: reset the info in the fact container every time the submit button is clicked
     $(".fact-container").empty()
 
+//below: naming a variable "inputNum" and setting it to whatever input value the user types into the input field
     const inputNum = $("input[type='text']").val()
 
+//below: 5 is the dafault amount of facts I want returned if the user doesn't enter a valid number
     let limit = 5
     if (inputNum) {
         limit = inputNum
@@ -14,23 +19,25 @@ $(".submit").on("click", (event) => {
 
 
 $.ajax({
-        url: "https://cat-fact.herokuapp.com/facts",
+        url: "https://cat-fact.herokuapp.com/facts/random",
         type: "GET",
         data: {
-            "$limit" : limit,
+            "amount" : limit,
 
         }
     }).then(
         (data) => {
             console.log(data);
 
-
+//below: created one ul to have something to attach our li to
             const $ul = $("<ul>")
 
-        for (let i = 0; i <data.length; i++) {
+//below: a loop that iterates through
+        for (let i = 0; i < data.length; i++) {
             const $li = $("<li>")
-            const $factsdiv = $("<div>").append(data[i])
-            $li.append([$factsdiv])
+            const $factsdiv = $("<div>").text(data[i].text)
+
+            $li.append($factsdiv)
             $ul.append($li)
         }
 
