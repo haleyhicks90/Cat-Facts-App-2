@@ -78,14 +78,41 @@ h2 {
 .carousel-images {
     width: 80%;
     border: 5px solid #61614E;
+    border-radius: 10%;
     margin-bottom: 20px;
 }
 
 .carousel-images img {
-    width: 100%;
+    width: auto;
     display: none;
+    border-radius: 10%;
 }
 
 .carousel-images img:first-of-type {
     display: block;
+}
+
+.button img:hover {
+    background-color: #E6E6B8;
+    border: 2px solid #61614E;
+    border-radius: 10%;
+}
+
+
+
+/* below: media queries */
+
+/* below: query for ipad */
+@media only screen and (min-width: 768px) {
+    .header h1 {
+        font-family: 'Staatliches', cursive;
+        font-size: 70px;
+        padding: 5px 15px;
+        color: #E6E6B8;
+    }
+    .form {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
 }
