@@ -83,7 +83,7 @@ h2 {
 }
 
 .carousel-images img {
-    width: auto;
+    width: 100%;
     display: none;
     border-radius: 10%;
 }
@@ -101,18 +101,24 @@ h2 {
 
 
 /* below: media queries */
+/* only need to list the properties that we are changing */
 
 /* below: query for ipad */
 @media only screen and (min-width: 768px) {
     .header h1 {
-        font-family: 'Staatliches', cursive;
         font-size: 70px;
-        padding: 5px 15px;
-        color: #E6E6B8;
     }
+
     .form {
-        font-family: 'Montserrat', sans-serif;
         line-height: 30px;
-        margin-bottom: 15px;
     }
+}
+
+/* below: query for desktop */
+@media only screen and (min-width: 1000px) {
+    .carousel-container {
+        width: 30%;
+        height: auto;
+    }
+
 }
