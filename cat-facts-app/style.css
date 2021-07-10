@@ -6,11 +6,16 @@
 
 body {
     background-color: #E6E6B8;
-    /* width: 100%; */
+    width: 100%;
+    height: auto;
 }
 
 /* I want the main container, which holds everything, to be the full width of the page */
 .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
     width: 100%;
 }
 
@@ -27,6 +32,7 @@ body {
     font-family: 'Staatliches', cursive;
     font-size: 50px;
     padding: 5px 15px;
+    color: #E6E6B8;
 }
 
 
@@ -34,47 +40,45 @@ body {
     margin: 10px;
 }
 
-
-
-/*
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-container h1, h2 {
+.sub-heading {
+    font-size: 30px;
     font-family: 'Staatliches', cursive;
+    text-align: center;
 }
 
 .main-container h3 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.sub-heading {
-    font-size: 40px;
-}
 
-#sh1 {
-    margin: 50px auto;
-}
-
-#sh2 {
-    line-height: 1%;
-} */
-
-/* .form {
+.form {
     font-family: 'Montserrat', sans-serif;
-} */
-/*
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.fact-container h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 35px;
+}
+
 .carousel-container {
     display: flex;
-    width: 30%;
-    /* justify-content: space-around; */ */
-/* }
+    width: 90%;
+    justify-content: space-around;
+}
 
 .carousel-images {
     width: 80%;
+    border: 5px solid #61614E;
+    margin-bottom: 20px;
 }
 
 .carousel-images img {
@@ -84,4 +88,4 @@ body {
 
 .carousel-images img:first-of-type {
     display: block;
-} */
+}
